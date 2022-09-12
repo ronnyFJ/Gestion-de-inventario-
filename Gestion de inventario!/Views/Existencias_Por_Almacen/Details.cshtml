@@ -1,0 +1,42 @@
+﻿@model Gestion_de_inventario_.Existencias_Por_Almacen
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Existencias_Por_Almacen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Almacenes.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Almacenes.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Articulo.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Articulo.Descripcion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_Almacen }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
